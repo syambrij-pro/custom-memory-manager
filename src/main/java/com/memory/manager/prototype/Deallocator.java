@@ -10,10 +10,16 @@ import java.util.List;
  *
  */
 public interface Deallocator {
-	
+
+	//Two method for evicting object/objects from disk.
 	void evict(String name);
 	void evictAll(List<String> names);
 	
+	/**
+	 * Two method for retrieving object/objects from files/disk.
+	 * These methods will not remove object/objects from local files/HDFS.
+	 *
+	 */
 	Object get(String name);
 	List<Object> getAll(List<String> names);
 
