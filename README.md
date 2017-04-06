@@ -11,20 +11,20 @@ The basic Idea is to save your objects in local files/HDFS or simply in disk oth
 Setup Guide lines:
 
 simply try to run "mvn clean install" in project directory after checkout.
-And then run "MemoryManager" class in "com.memory.manager.tester" package. This class is just to run/test the application. Please change "folder path" passed in "writer" method.
+And then run "MemoryManager" class in "com.memory.manager.tester" package. This class is just to run/test the application.   Please change "folder path" passed in "writer" method.
 
 Other Details:
 
-Persistor Interface - com.memory.manager.prototype.Persistor
+Persistor Interface - com.memory.manager.prototype.Persistor                                                               
 Deallocator Interface- com.memory.manager.prototype.Deallocator
 
 
-Performace Benchmarking:
+Performace Benchmarking:                                                                                             
 
-For 1 million objects on PC - Intel i3 dual core CPU:
+For 1 million objects on PC - Intel® Core™ i3-3220 CPU @ 3.30GHz × 4  CPU:                                                                                                         
 
-Using Java 1.7-  It took 109 to 114 seconds.
-Using Java 1.8(parallel stream api)-  It took 85 to 90 seconds.
+Using Java 1.7-  It took 109 to 114 seconds.                                                                              
+Using Java 1.8(parallel stream api)-  It took 85 to 90 seconds.                                                        
 
 On single machine standalone node mode Apache Spark took 95 to 99 seconds.(Not an ideal environment to run Apache Spark.)
 
